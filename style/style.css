@@ -150,11 +150,11 @@ a {
 }
 .sub-index{
     display: flex;
-    justify-content: space-between;
     gap:  165px;
     align-items: center;
     max-width: 1080px;
     margin: 0 auto;
+    margin-bottom: 85px;
 }
 .sub-index-image{
     position: relative;
@@ -173,12 +173,12 @@ a {
     bottom: 0px;
 }
 .sub-index-description p{
-    max-width: 565px;
-    width: auto;
+    max-width: 460px;
     font-size: var(--font-size-description);
     font-family: var(--font-main);
     color: var(--color-text-description);
     margin-bottom: 30px;
+    letter-spacing: var(--font-letter-spacing-button);
 }
 .sub-index-description h1{
     color: var(--color-text-black);
@@ -192,4 +192,51 @@ a {
     font-size: 17px;
     font-family: var(--font-main);
     font-weight: 700;
+}
+.in-depth-metrics{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1080px;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+}
+.metrics-text h1{
+    width: 555px;
+    font-size: var(--font-size-h1);
+    font-family: var(--font-main);
+    margin-bottom: 30px;
+}
+.metrics-text p{
+    max-width: 460px;
+    width: auto;
+    font-size: var(--font-size-description);
+    font-family: var(--font-main);
+    color: var(--color-text-black);
+    margin-bottom: 30px;
+    color: var(--color-text-description);
+    letter-spacing: var(--font-letter-spacing-button);
+}
+.metrics-text a{
+    color: #5454D4;
+    font-size: 17px;
+    font-family: var(--font-main);
+    font-weight: 700;
+}
+.metrics-image{
+    position: relative;
+    width: 350px;
+    flex-shrink: 0;
+    height: 475px;
+}
+.metrics-man{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.metrics-graphic{
+    position: absolute;
+    top: 20px;
+    left: 140px;
 }
