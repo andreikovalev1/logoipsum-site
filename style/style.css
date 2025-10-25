@@ -1,0 +1,177 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box; /* padding и border включаются в заданную width/height */
+}
+
+:root{
+    --color-background-orange:  #FF7143;
+    --color-text-hover: #19191B;
+    --color-text-nav-a: #696871; 
+    --color-text-light: #ffffff;
+    --color-background-button: #5454D4;
+
+    /* Шрифты */
+    --font-main: 'DM Sans', sans-serif;
+    --font-size-description: 20px;
+    --font-letter-spacing-button:-0.53px;
+    --font-weight-button:550;
+    
+}
+body, h1, h2, h3, h4, h5, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit; /* Ссылки наследуют цвет родителя */
+}
+.main-header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px 100px 0px;
+    margin: 0 auto;
+    max-width: 1080px;
+    width: 90%;
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 50px;
+}
+.nav-list a{
+    text-decoration: none;
+    color: var(--color-text-nav-a);
+    font-family: var(--font-main);
+    font-size: 15px;
+    font-weight: 700;
+}
+.header-button{
+    background-color: var(--color-background-orange);
+    padding: 20px 60px;
+    border-radius: 15px;
+    border: none;
+    font-size: 17px;
+    font-family: var(--font-main);
+    font-weight: var(--font-weight-button);
+    color: var(--color-text-light);
+    white-space: nowrap;
+    letter-spacing: var(--font-letter-spacing-button);
+}
+.sub-business{
+    max-width: 1080px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 110px;
+    gap:75px;
+}
+.title-business{
+    max-width: 460px;
+}
+.title-business h1{
+    text-align: left;
+    font-size: 80px;
+    font-family: var(--font-main);
+    max-width: 460px;
+    line-height: 77px;
+    margin-bottom: 30px;
+
+}
+.title-business p{
+    font-size: var(--font-size-description);
+    font-family: var(--font-main);
+    color: var(--color-text-nav-a);
+    margin-bottom: 50px;
+    line-height: 30px;
+}
+.sub-buttons{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.sub-business-button{
+    background-color: var(--color-background-button);
+    border: none;
+    color: var(--color-text-light);
+    font-family: var(--font-main);
+    padding: 20px 60px;
+    border-radius: 10px;
+    font-size: 17px;
+    line-height: 100%;
+    letter-spacing: var(--font-letter-spacing-button);
+    font-weight: var(--font-weight-button);
+}
+.sub-business-button-circle{
+    padding: 0;
+    border:none;
+    background-color: var(--color-text-light);
+}
+.sub-image-block {
+    position: relative;
+    width: 610px;
+    height: 650px;
+}
+.business-human {
+    position: absolute;
+    z-index: 2;
+    width: auto;
+}
+.business-stand {
+    position: absolute;
+    z-index: 1;
+    top: 110px;
+    left: 60px;
+    width: auto;
+}
+.business-message {
+    position: absolute;
+    z-index: 3;
+    left: 380px;
+    bottom: 70px;
+    width: auto;
+}
+.logo-blocks{
+    display: flex;
+    gap: 120px;
+    justify-content: center;
+    margin-bottom: 160px;
+}
+.sub-index{
+    display: flex;
+    justify-content: space-between;
+    gap:  165px;
+    align-items: center;
+    max-width: 1080px;
+    width: 90%;
+    margin: 0 auto;
+}
+.sub-index-image{
+    position: relative;
+    width: 35%;
+    min-height: 400px;
+}
+.sub-index-circle{
+    position: absolute;
+    top: 85px;
+    left: 0px;
+    width: 50%;
+}
+.sub-index-people{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 50%;
+    height: auto;
+}
+.sub-index-description{
+    width: 55%;
+}
