@@ -6,16 +6,19 @@
 
 :root{
     --color-background-orange:  #FF7143;
-    --color-text-hover: #19191B;
-    --color-text-nav-a: #696871; 
+    --color-text-black: #19191B;
+    --color-text-description: #696871; 
     --color-text-light: #ffffff;
     --color-background-button: #5454D4;
 
     /* Шрифты */
     --font-main: 'DM Sans', sans-serif;
+    --font-size-h1: 50px;
     --font-size-description: 20px;
     --font-letter-spacing-button:-0.53px;
     --font-weight-button:550;
+    --font-head-description:50px;
+    --font-weight-description: 700;
     
 }
 body, h1, h2, h3, h4, h5, p, ul, li {
@@ -47,7 +50,7 @@ a {
 }
 .nav-list a{
     text-decoration: none;
-    color: var(--color-text-nav-a);
+    color: var(--color-text-description);
     font-family: var(--font-main);
     font-size: 15px;
     font-weight: 700;
@@ -89,7 +92,7 @@ a {
 .title-business p{
     font-size: var(--font-size-description);
     font-family: var(--font-main);
-    color: var(--color-text-nav-a);
+    color: var(--color-text-description);
     margin-bottom: 50px;
     line-height: 30px;
 }
@@ -151,27 +154,42 @@ a {
     gap:  165px;
     align-items: center;
     max-width: 1080px;
-    width: 90%;
     margin: 0 auto;
 }
 .sub-index-image{
     position: relative;
-    width: 35%;
-    min-height: 400px;
+    width: 350px;
+    height: 480px;
+    flex-shrink: 0;
 }
 .sub-index-circle{
     position: absolute;
     top: 85px;
     left: 0px;
-    width: 50%;
 }
 .sub-index-people{
     position: absolute;
     right: 0px;
     bottom: 0px;
-    width: 50%;
-    height: auto;
 }
-.sub-index-description{
-    width: 55%;
+.sub-index-description p{
+    max-width: 565px;
+    width: auto;
+    font-size: var(--font-size-description);
+    font-family: var(--font-main);
+    color: var(--color-text-description);
+    margin-bottom: 30px;
+}
+.sub-index-description h1{
+    color: var(--color-text-black);
+    font-size: var(--font-size-h1);
+    font-family: var(--font-main);
+    text-wrap: nowrap;
+    margin-bottom: 30px;
+}
+.sub-index-description a{
+    color: #5454D4;
+    font-size: 17px;
+    font-family: var(--font-main);
+    font-weight: 700;
 }
