@@ -6,6 +6,7 @@
 
 :root{
     --color-background-orange:  #FF7143;
+    --color-background-litegray: #F8F8F8;
     --color-text-black: #19191B;
     --color-text-description: #696871; 
     --color-text-light: #ffffff;
@@ -20,6 +21,8 @@
     --font-head-description:50px;
     --font-weight-description: 700;
     --font-size-earning-cards: 16px;
+    --font-size-description-cards: 18px;
+    --font-size-h1-cards: 60px;
     
 }
 body, h1, h2, h3, h4, h5, p, ul, li {
@@ -39,7 +42,7 @@ a {
     align-items: center;
     padding: 30px 0px 100px 0px;
     margin: 0 auto;
-    max-width: 1080px;
+    max-width: 1150px;
     width: 90%;
 }
 .nav-list{
@@ -69,8 +72,7 @@ a {
     letter-spacing: var(--font-letter-spacing-button);
 }
 .sub-business{
-    max-width: 1080px;
-    width: 90%;
+    max-width: 1150px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -144,16 +146,17 @@ a {
     width: auto;
 }
 .logo-blocks{
+    width: 1150px;
+    margin: 0 auto;
     display: flex;
-    gap: 120px;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 160px;
 }
 .sub-index{
     display: flex;
     gap:  165px;
     align-items: center;
-    max-width: 1080px;
+    max-width: 1150px;
     margin: 0 auto;
     margin-bottom: 85px;
 }
@@ -198,7 +201,7 @@ a {
     display: flex;
     align-items: center;
     gap: 60px;
-    max-width: 1080px;
+    max-width: 1150px;
     width: auto;
     height: auto;
     margin: 0 auto;
@@ -245,9 +248,9 @@ a {
 .species-earnings{
     display: flex;
     align-items: center;
-    max-width: 1080px;
+    justify-content: space-between;
+    max-width: 1150px;
     margin: 0 auto;
-    gap: 75px;
     margin-bottom: 150px;
 }
 .card p{
@@ -291,4 +294,204 @@ a {
     letter-spacing: var(--font-letter-spacing-button);
     color: var(--color-text-description);
     width: 305px;
+}
+.purchases{
+    display: flex;
+    flex-direction: column;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+.head-of-purchases{
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.head-of-purchases h1{
+    max-width: 525px;
+    font-size: 60px;
+    font-family: var(--font-main);
+    line-height: 70px;
+}
+.toggle-switch {
+    display: flex;
+    width: 345px;
+    height: 65px;
+    border-radius: 8px; 
+    border: 1px solid #E0E0E0; 
+    margin-top: 50px;
+    margin-bottom: 25px;
+    background-color: white; 
+    flex-shrink: 0;
+}
+.toggle-option {
+    /* Каждая кнопка занимает равное место */
+    flex: 1; 
+    /* Базовый стиль текста */
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--font-main);
+    color: var(--color-text-black);
+    /* Сбрасываем стили кнопки по умолчанию */
+    background: transparent;
+    border: none;
+    padding: 10px 15px; 
+    cursor: pointer;
+    /* Важно: сброс border-radius для опций, кроме крайних */
+    border-radius: 0; 
+    /* Плавный переход при смене активного состояния */
+    transition: all 0.2s ease-in-out; 
+}
+/* Скругление для крайних элементов, чтобы они соответствовали контейнеру */
+.toggle-switch button:first-child {
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+.toggle-switch button:last-child {
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+.toggle-option.active {
+    background-color: #5454D4; /* Ваш синий цвет */
+    color: white;
+    font-weight: 700;
+    /* Убираем рамку или тень при фокусе */
+    outline: none; 
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    font-family: var(--font-main);
+    color: var(--color-text-description);
+    margin-bottom: 150px;
+}
+.card-starter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 330px;
+    height: 440px;
+    background-color: var(--color-background-litegray);
+    border-radius: 10px;
+    padding: 30px 0;
+    font-size: 400;
+}
+.card-starter p{
+    font-size: var(--font-size-description-cards);
+    letter-spacing: var(--font-letter-spacing-button);
+}
+.card-starter h1{
+    font-size: var(--font-size-h1-cards);
+    color: var(--color-text-black);
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+.card-starter li{
+    line-height: 50px;
+    text-align: center;
+}
+.purchases-starter-Enterprise-button{
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 285px;
+    padding: 20px 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 35px;
+    border-radius: 10px;
+    border: none;
+    font-size: var(--font-size-description-cards);
+    font-family: var(--font-main);
+    color: var(--color-background-button);
+    font-weight: 700;
+    letter-spacing: var(--font-letter-spacing-button);
+
+}
+.card-premium{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 375px;
+    height: 475px;
+    background-color: var(--color-background-orange);
+    border-radius: 10px;
+    padding: 45px 0;
+    color: var(--color-background-litegray);
+    font-family: var(--font-main);
+}
+.card-premium p{
+    margin-bottom: 20px;
+    font-size: var(--font-size-description-cards);
+}
+.price-premium{
+    color: var(--color-text-light);
+    font-family: var(--font-main);
+    font-weight: 600;
+    margin-bottom: 25px;
+    height: auto;
+    
+}
+.price-value-prem{
+    font-size: 60px;
+}
+.price-period-prem{
+    font-size: 28px;
+}
+.card-premium li{
+    line-height: 50px;
+    text-align: center;
+}
+.purchases-premium-button{
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 305px;
+    padding: 20px 60px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 35px;
+    border-radius: 10px;
+    border: none;
+    font-size: var(--font-size-description-cards);
+    font-family: var(--font-main);
+    color: var(--color-background-litegray);
+    font-weight: 500;
+    letter-spacing: var(--font-letter-spacing-button);
+    background-color: #9F3919;
+}
+.card-enterprice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 330px;
+    height: 440px;
+    background-color: var(--color-background-litegray);
+    border-radius: 10px;
+    padding: 30px 0;
+}
+.card-enterprice p{
+    font-size: var(--font-size-description-cards);
+    letter-spacing: var(--font-letter-spacing-button);
+    margin-bottom: 20px;
+}
+.price-display{
+    color: var(--color-text-black);
+    font-family: var(--font-main);
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin-bottom: 25px;
+}
+.price-value{
+    font-size: 60px;
+}
+.price-period{
+    font-size: 28px;
+}
+.card-enterprice li{
+    line-height: 50px;
+    text-align: center;
 }
